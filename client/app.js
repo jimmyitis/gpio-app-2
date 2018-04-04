@@ -1,5 +1,6 @@
 var socket = require("socket.io-client")("http://localhost:3000");
 var gpio = require("rpi-gpio");
+//we should add PI-SPI too!
 
 process.on("SIGINT", function(){
   gpio.write(12, false, function(){
